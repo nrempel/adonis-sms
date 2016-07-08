@@ -1,0 +1,40 @@
+{
+  "name": "adonis-sms",
+  "version": "0.0.1",
+  "description": "AdonisJS provider to send and receive SMS",
+  "main": "index.js",
+  "scripts": {
+    "test": "istanbul cover _mocha --report lcovonly -- -R spec test/unit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nrempel/adonis-sms.git"
+  },
+  "keywords": [
+    "adonisjs",
+    "adonis",
+    "provider",
+    "sms"
+  ],
+  "dependencies": {
+    
+  },
+  "peerDependencies": {
+    "adonis-fold": "^3.0.2"
+  },
+  "devDependencies": {
+    "adonis-fold": "^3.0.2",
+    "chai": "^3.5.0",
+    "co-mocha": "^1.1.2",
+    "coveralls": "^2.11.6",
+    "cz-conventional-changelog": "^1.1.5",
+    "istanbul": "^0.4.2",
+    "mocha": "^2.4.5"
+  },
+  "author": "Nicholas Rempel <nbrempel@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nrempel/adonis-sms/issues"
+  },
+  "homepage": "https://github.com/nrempel/adonis-sms#readme"
+}

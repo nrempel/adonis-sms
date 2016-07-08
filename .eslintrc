@@ -1,0 +1,15 @@
+{
+  "extends": "airbnb",
+  "globals": {
+    "use": true
+  },
+  "rules": {
+    "import/no-unresolved": "off",
+    "func-names": "off",
+    "arrow-body-style": "off",
+    "comma-dangle": "off",
+    "global-require": "off",
+    "space-before-function-paren": "off",
+    "no-param-reassign": "off"
+  }
+}
