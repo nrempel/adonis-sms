@@ -1,6 +1,6 @@
 {
   "name": "adonis-sms",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "AdonisJS provider to send and receive SMS",
   "main": "index.js",
   "scripts": {
