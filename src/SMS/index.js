@@ -39,7 +39,7 @@ class SMS {
 
   makeDriverInstance (driver) {
     if (driver === 'default') {
-      driver = this.config.get('mail.driver');
+      driver = this.config.get('sms.driver');
     }
     if (Drivers[driver]) {
       return Ioc.make(Drivers[driver]);
@@ -58,8 +58,7 @@ class SMS {
    * @return {Object}
    *
    * @example
-   * Mail.driver('mandrill')
-   * Mail.driver('smtp')
+   * SMS.driver('plivo')
    *
    * @public
    */
