@@ -20,7 +20,8 @@
     
   },
   "peerDependencies": {
-    "adonis-fold": "^3.0.2"
+    "adonis-fold": "^3.0.2",
+    "plivo": "^0.3.3"
   },
   "devDependencies": {
     "adonis-fold": "^3.0.2",

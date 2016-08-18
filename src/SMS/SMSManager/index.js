@@ -3,10 +3,9 @@ const NE = require('node-exceptions');
 
 class SMSManager {
 
-  constructor (view, driver, fromNumber) {
+  constructor (view, driver) {
     this.driver = driver;
     this.view = view;
-    this.from = fromNumber;
   }
 
   /**
@@ -38,7 +37,8 @@ class SMSManager {
     }
     const message = new Message();
     const compiledView = yield this.view.make(view, data);
-    if (this.from) message.from(this.from);
+    const defaultFrom = config.get('sms.from');
+    if (defaultFrom) message.from(defaultFrom);
     message.text(compiledView);
     // Call callback to allow setting of params on message
     callback(message);

@@ -1,3 +1,4 @@
 module.exports = {
-  log: require('./Log')
+  log: require('./Log'),
+  plivo: require('./Plivo')
 };
