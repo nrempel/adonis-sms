@@ -2,11 +2,16 @@ const plivo = require('plivo');
 
 class Plivo {
   constructor (Config) {
-    console.error(Config);
+    const p = this.config.get('sms.plivo');
+    console.error(p);
 
     this.config = Config;
     const authId = this.config.get('sms.plivo.authId');
     const authToken = this.config.get('sms.plivo.authToken');
+
+    console.error(authId);
+    console.error(authToken);
+
     if (!authId) throw new Error('Auth Id not found in Plivo config.');
     if (!authToken) throw new Error('Auth Token not found in Plivo config.');
     this.plivo = plivo.RestAPI({ authId, authToken });
