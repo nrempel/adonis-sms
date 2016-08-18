@@ -67,7 +67,7 @@ class SMS {
       const driverInstance = this.makeDriverInstance(driver);
       this.driversPool[driver] = driverInstance;
     }
-    return new SMSManager(this.view, this.driversPool[driver]);
+    return new SMSManager(this.view, this.driversPool[driver], this.config.get('sms.from'));
   }
 
 }

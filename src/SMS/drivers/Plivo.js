@@ -12,8 +12,6 @@ class Plivo {
 
   send (message, config) {
     if (config) this.config = config;
-    const defaultFrom = this.config.get('sms.from');
-    if (defaultFrom) message.from(defaultFrom);
     return new Promise((resolve, reject) => {
       this.plivo.send_message({
         src: message.from,
