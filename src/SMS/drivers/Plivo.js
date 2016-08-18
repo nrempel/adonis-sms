@@ -2,10 +2,10 @@ const plivo = require('plivo');
 
 class Plivo {
   constructor (Config) {
+    this.config = Config;
     const p = this.config.get('sms.plivo');
     console.error(p);
 
-    this.config = Config;
     const authId = this.config.get('sms.plivo.authId');
     const authToken = this.config.get('sms.plivo.authToken');
 
