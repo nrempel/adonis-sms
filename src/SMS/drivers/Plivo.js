@@ -1,6 +1,6 @@
 const plivo = require('plivo');
 
-class Log {
+class Plivo {
   constructor (Config) {
     this.config = Config;
     const authId = this.config.get('sms.plivo.authId');
@@ -28,4 +28,4 @@ class Log {
   }
 }
 
-module.exports = Log;
+module.exports = Plivo;
