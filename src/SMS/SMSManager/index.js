@@ -37,9 +37,6 @@ class SMSManager {
     }
     const message = new Message();
     const compiledView = yield this.view.make(view, data);
-    console.error(config);
-    const defaultFrom = config.get('sms.from');
-    if (defaultFrom) message.from(defaultFrom);
     message.text(compiledView);
     // Call callback to allow setting of params on message
     callback(message);
