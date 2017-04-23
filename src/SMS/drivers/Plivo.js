@@ -19,7 +19,7 @@ class Plivo {
         text: message.text
       }, (status, response) => {
         if (status < 200 || status > 299) {
-          return reject(`${status} response - ${response.error}`);
+          return reject(`${status} response - ${response}`);
         }
         return resolve(response.message_uuid);
       });
