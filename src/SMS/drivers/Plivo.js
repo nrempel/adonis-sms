@@ -7,7 +7,7 @@ class Plivo {
     const authToken = this.config.get('sms.plivo.authToken');
     if (!authId) throw new Error('Auth Id not found in Plivo config.');
     if (!authToken) throw new Error('Auth Token not found in Plivo config.');
-    this.plivo = plivo.RestAPI({ authId, authToken });
+    this.plivo = plivo.RestAPI({ authId, authToken, host: 'api.plivo.io' });
   }
 
   send (message, config) {
